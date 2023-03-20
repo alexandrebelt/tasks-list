@@ -1,0 +1,30 @@
+:root {
+    --bg: #E9E9E9;
+    --branco: #fff;
+    --lista-bg: #dadddf;
+}
+
+body {
+    font-family: "Montserrat";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    background-color: var(--bg);
+
+    p {
+        line-height: 1em;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 40px auto;
+    }
+}
+.nome-app {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}

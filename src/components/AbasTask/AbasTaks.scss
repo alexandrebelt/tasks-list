@@ -1,0 +1,23 @@
+nav .aba.router-link-exact-active {
+    background-color: var(--lista-bg);
+
+}
+
+.abas {
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -25px;
+    column-gap: 10px;
+}
+
+.aba {
+    background-color: var(--branco);
+    color: #2c3e50;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 20px 20px;
+    border-radius: 10px 10px 0 0;
+    text-decoration: none;
+    cursor: pointer;
+}
