@@ -60,7 +60,7 @@ export default createStore({
         }).catch(console.log)
     },
 
-    submitTask({commit}, payload) {
+    submitTask({ commit }, payload) {
       axios.post('https://6415ac7e351c4aed490c5c4f.mockapi.io/api/v1/tasks', payload)
         .then((response) => {
           commit('CREATE_TASK', response.data)
@@ -101,7 +101,7 @@ export default createStore({
 
     },
 
-    updateFilter({commit}, filtro) {
+    updateFilter({ commit }, filtro) {
       commit('UPDATE_FILTER', filtro)
     }
   },

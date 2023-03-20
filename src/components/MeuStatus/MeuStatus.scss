@@ -11,37 +11,42 @@
     margin: 20px;
 }
 
-@media(max-width:600px){
-    .item{
+@media(max-width:600px) {
+    .item {
         display: flex !important;
         flex-wrap: wrap;
-      }
+    }
+
     .status {
         font-size: 8px;
         cursor: pointer;
         margin: 10px;
     }
+
     .item-col2 {
         width: 50%;
-      }
-      .item-col3 {
+    }
+
+    .item-col3 {
         width: 50%;
         align-self: center;
-      }
-      .item-col1 {
+    }
+
+    .item-col1 {
         width: 100%;
-      }
-      
-      .item-col2 {
+    }
+
+    .item-col2 {
         margin-bottom: 10px;
-      }
-      .item-col2 span {
+    }
+
+    .item-col2 span {
         margin: 0;
-      }
-      
-      .item-col3 img {
+    }
+
+    .item-col3 img {
         padding: 0;
         float: right;
-      }
-    
+    }
+
 }

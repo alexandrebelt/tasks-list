@@ -32,5 +32,4 @@ export default {
 
 <style>
 @import './App.scss';
-
 </style>

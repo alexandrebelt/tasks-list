@@ -21,7 +21,7 @@ export default {
 
     methods: {
         changeStatus(id) {
-            this.$store.dispatch('changeStatus', {id, done: !this.nota.done})
+            this.$store.dispatch('changeStatus', { id, done: !this.nota.done })
         },
 
         showStatus(data) {

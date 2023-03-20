@@ -23,9 +23,9 @@
 import MeuStatus from '../components/MeuStatus/MeuStatus.vue'
 
 export default {
-  name:'listView',
+  name: 'listView',
 
-  props:{
+  props: {
     filtro: Boolean
   },
 
@@ -44,21 +44,21 @@ export default {
       return this.$store.getters.notas
     },
 
-    filteredTasks(){
+    filteredTasks() {
       return this.$store.getters.filteredTasks
     }
-   
+
   },
 
   methods: {
     showTasks() {
       this.$store.dispatch('showTasks')
-    }, 
-    deleteTask(id){
+    },
+    deleteTask(id) {
       this.$store.dispatch('deleteTask', id)
 
     },
-    
+
   },
 
   mounted() {
@@ -70,5 +70,5 @@ export default {
 </script>
 
 <style>
-@import './ListaView.scss'
+@import './ListaView.scss';
 </style>
