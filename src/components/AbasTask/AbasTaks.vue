@@ -1,6 +1,6 @@
 <template>
     <nav class="abas">
-        <router-link class="aba" to="/all" @click="$store.dispatch('updateFilter', 'all')">Todas</router-link>
+        <router-link class="aba" to="/" @click="$store.dispatch('updateFilter', '')">Todas</router-link>
         <router-link class="aba" to="/false" @click="$store.dispatch('updateFilter', 'false')">Ativas</router-link>
         <router-link class="aba" to="/true" @click="$store.dispatch('updateFilter', 'true')">Concluídas</router-link>
     </nav>

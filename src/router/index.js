@@ -3,7 +3,7 @@ import ListaView from '../views/ListaView.vue'
 
 const routes = [
   {
-    path: '/all',
+    path: '/',
     component: ListaView,
   },
   {
@@ -18,7 +18,7 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
-
+  mode: 'history',
   routes
 })
 

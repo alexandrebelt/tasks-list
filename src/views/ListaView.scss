@@ -30,7 +30,7 @@
   }
   
   .trash{
-    opacity: 0;
+    opacity: 0.4;
     transition: 0.2s
   }
   .item:hover .trash{
@@ -44,7 +44,7 @@
   }
   
   .descricao{
-  line-break: normal;
+  line-break: anywhere;
   }
   
   .ativa{
@@ -54,4 +54,10 @@
   .concluida{
   background-color: #4f4c9f;
   color:var(--branco);;
+  }
+
+  @media(max-width:600px){
+    .trash{
+      opacity: 1;
+    }
   }

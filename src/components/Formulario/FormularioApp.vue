@@ -1,11 +1,11 @@
 <template>
   <form v-on:submit.prevent="submitTask" id="formulario" ref="formTarefa">
 
-    <input id="nome" class="caixa-texto" required type="text" placeholder="Nome" v-model="form.name">
+    <input id="nome" maxlength="50" class="caixa-texto" required type="text" placeholder="Nome" v-model="form.name">
     <textarea 
       id="desc" 
       class="caixa-texto" 
-      maxlength="50"
+      maxlength="100"
       required 
       placeholder="Tarefa" 
       v-model="form.descricao"></textarea>
@@ -36,7 +36,6 @@ export default {
       this.$store.dispatch('submitTask', this.form);
       this.form.name=''
       this.form.descricao=''
-      alert('tarefa adicionada')
     }
   }
 }
